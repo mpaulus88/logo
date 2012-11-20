@@ -10,7 +10,7 @@ function perso_menu_link(array $variables) {
   $output = l($element['#title'], $element['#href'], $element['#localized_options']);
   if($element['#original_link']['menu_name']=='menu-menu-graphique')
   {
-  return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu ."<p>".$element['#localized_options']['attributes']['title']."</p>"."</li>\n";
+  return '<li'.' id="'.$element['#title'].'"'. drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu ."<p>".$element['#localized_options']['attributes']['title']."</p>"."</li>\n";
 	}
 	else
 	{ return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
