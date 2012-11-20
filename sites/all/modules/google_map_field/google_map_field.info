@@ -1,0 +1,11 @@
+name = Google Map Field
+description = Defines a Google map field.
+core = 7.x
+package = Fields
+
+; Information added by drupal.org packaging script on 2012-11-07
+version = "7.x-1.4"
+core = "7.x"
+project = "google_map_field"
+datestamp = "1352295413"
+

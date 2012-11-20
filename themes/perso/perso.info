@@ -1,0 +1,5 @@
+
+name = Perso
+description = Theme de l'unité de logopédie de la voix
+base theme = bartik
+core = 7.x
