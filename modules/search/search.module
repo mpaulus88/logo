@@ -988,7 +988,7 @@ function search_form($form, &$form_state, $action = '', $keys = '', $module = NU
     '#type' => 'textfield',
     '#title' => $prompt,
     '#default_value' => $keys,
-    '#size' => $prompt ? 40 : 20,
+    '#size' => $prompt ? 30 : 20,
     '#maxlength' => 255,
   );
   // processed_keys is used to coordinate keyword passing between other forms

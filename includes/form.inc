@@ -4101,7 +4101,6 @@ function theme_form_element_label($variables) {
   $element = $variables['element'];
   // This is also used in the installer, pre-database setup.
   $t = get_t();
-
   // If title and required marker are both empty, output no label.
   if ((!isset($element['#title']) || $element['#title'] === '') && empty($element['#required'])) {
     return '';
@@ -4121,6 +4120,7 @@ function theme_form_element_label($variables) {
   elseif ($element['#title_display'] == 'invisible') {
     $attributes['class'] = 'element-invisible';
   }
+
 
   if (!empty($element['#id'])) {
     $attributes['for'] = $element['#id'];

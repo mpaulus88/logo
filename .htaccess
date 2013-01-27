@@ -129,3 +129,6 @@ DirectoryIndex index.php index.html index.htm
     </FilesMatch>
   </IfModule>
 </IfModule>
+SetEnv PHP_VER 5
+SetEnv REGISTER_GLOBALS 0
+SetEnv ZEND_OPTIMIZER 1

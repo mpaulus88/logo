@@ -156,7 +156,7 @@ function _addressfield_process_format_form(&$format, $address, $required) {
 
     // Automatically expand elements that matches one of the field of the
     // address structure.
-    if (in_array($key, array('name_line', 'first_name', 'last_name', 'organisation_name', 'country', 'administrative_area', 'sub_administrative_area', 'locality', 'dependent_locality', 'postal_code', 'thoroughfare', 'premise', 'sub_premise'))) {
+    if (in_array($key, array('name_line', 'first_name', 'last_name', 'organisation_name', 'country', 'administrative_area', 'sub_administrative_area', 'locality', 'dependent_locality', 'postal_code', 'thoroughfare', 'sub_premise'))) {
       // Set the type.
       if (isset($child['#widget_type'])) {
         $child['#type'] = $child['#widget_type'];
@@ -196,7 +196,7 @@ function _addressfield_render_address(&$format, $address) {
 
     // Automatically expand elements that matches one of the field of the
     // address structure.
-    if (in_array($key, array('name_line', 'first_name', 'last_name', 'organisation_name', 'country', 'administrative_area', 'sub_administrative_area', 'locality', 'dependent_locality', 'postal_code', 'thoroughfare', 'premise', 'sub_premise'))) {
+    if (in_array($key, array('name_line', 'first_name', 'last_name', 'organisation_name', 'country', 'administrative_area', 'sub_administrative_area', 'locality', 'dependent_locality', 'postal_code', 'thoroughfare', 'sub_premise'))) {
       if (isset($child['#render_type'])) {
         $child['#type'] = $child['#render_type'];
       }
@@ -338,7 +338,6 @@ function addressfield_default_values($available_countries = NULL) {
     'dependent_locality' => '',
     'postal_code' => '',
     'thoroughfare' => '',
-    'premise' => '',
     'sub_premise' => '',
     'data' => '',
   );
@@ -682,13 +681,10 @@ function addressfield_data_property_info($name = NULL) {
       'label' => t('Dependent locality'),
     ),
     'postal_code' => array(
-      'label' => t('Postal code'),
+      'label' => t('Postal Code'),
     ),
     'thoroughfare' => array(
       'label' => t('Thoroughfare (i.e. Street address)'),
-    ),
-    'premise' => array(
-      'label' => t('Premise (i.e. Apartment / Suite number)'),
     ),
     'name_line' => array(
       'label' => t('Sub premise'),

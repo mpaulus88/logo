@@ -1,0 +1,26 @@
+;$Id$
+name = Publication Mail
+description = Send an email to request a publication
+
+core = 7.x
+package = 
+files[] = publication_mail.module
+
+<?php
+// $Id$
+/**
+* @file
+* Publication mail module file
+*Send an email to an author to request a publication
+*
+* Administrators
+* can configure the default e-mail including token replacement.
+*/
+/**
+* Implement hook_help().
+*/
+function user_warn_help($path, $arg) {
+if ($path == 'admin/help#user_warn') {
+return t('User Warn allows site adminitrators to send a standard e-mail to site users to notify them of improper behavior.');
+}
+}
