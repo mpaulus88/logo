@@ -107,14 +107,9 @@
         )); ?>
       </nav>
     <?php endif; ?>
-
   </header>
-
   <div id="main">
-
-   
-
-    <div id="navigation">
+   <div id="navigation">
 
       <?php if ($main_menu): ?>
         <nav id="main-menu" role="navigation">

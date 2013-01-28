@@ -71,9 +71,7 @@
 ?>
 
 <div id="page">
-
   <header id="header" role="banner">
-
     <?php if ($logo): ?>
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /><h1>Unité Logopédie de la Voix</h1></a>
     <?php endif; ?>
@@ -109,11 +107,7 @@
     <?php endif; ?>
 
   </header>
-
   <div id="main">
-
-   
-
     <div id="navigation">
 
       <?php if ($main_menu): ?>
@@ -136,9 +130,7 @@
           )); ?>
         </nav>
       <?php endif; ?>
-
       <?php print render($page['navigation']); ?>
-
     </div><!-- /#navigation -->
     <img id="slide" src="<?php print base_path() . path_to_theme() .'/' ?>images/imgSlide.png" alt="Logopédie">
      <div id="content" class="column" role="main">
@@ -216,5 +208,6 @@
 </div><!-- /#page -->
 
 <?php print render($page['bottom']); ?>
-<script src="<?php print base_path() . path_to_theme() .'/' ?>js/contact.js"></script>
 <script src="<?php print base_path() . path_to_theme() .'/' ?>js/jquery.js"></script>
+<script src="<?php print base_path() . path_to_theme() .'/' ?>js/contact.js"></script>
+

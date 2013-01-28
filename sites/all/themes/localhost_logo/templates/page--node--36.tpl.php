@@ -69,15 +69,11 @@
  * @see template_process()
  */
 ?>
-
 <div id="page">
-
   <header id="header" role="banner">
-
     <?php if ($logo): ?>
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /><h1>Unité Logopédie de la Voix</h1></a>
     <?php endif; ?>
-
     <?php if ($site_name || $site_slogan): ?>
       <hgroup id="name-and-slogan">
         <?php if ($site_name): ?>
@@ -85,7 +81,6 @@
             <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
           </h1>
         <?php endif; ?>
-
         <?php if ($site_slogan): ?>
           <h2 id="site-slogan"><?php print $site_slogan; ?></h2>
         <?php endif; ?>
@@ -111,11 +106,7 @@
   </header>
 
   <div id="main">
-
-   
-
     <div id="navigation">
-
       <?php if ($main_menu): ?>
         <nav id="main-menu" role="navigation">
           <?php
@@ -138,7 +129,6 @@
       <?php endif; ?>
 
       <?php print render($page['navigation']); ?>
-
     </div><!-- /#navigation -->
     <img id="slide" src="<?php print base_path() . path_to_theme() .'/' ?>images/imgSlide.png" alt="Logopédie">
      <div id="content" class="column" role="main">
@@ -188,8 +178,9 @@
   <?php print render($page['footer']); ?>
 
 </div><!-- /#page -->
-<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDYewKuo925FLQft1nA1hD3TPxgKUr5GB4&sensor=false"></script>
-<script src="<?php print base_path() . path_to_theme() .'/' ?>js/map.js"></script>
-<script src="<?php print base_path() . path_to_theme() .'/' ?>js/jquery.js"></script>
 
 <?php print render($page['bottom']); ?>
+<script src="<?php print base_path() . path_to_theme() .'/' ?>js/jquery.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDYewKuo925FLQft1nA1hD3TPxgKUr5GB4&sensor=false"></script>
+<script src="<?php print base_path() . path_to_theme() .'/' ?>js/map.js"></script>
+

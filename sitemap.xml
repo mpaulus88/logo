@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+			
+<url>
+  <loc>http://es-designer.be/logo/</loc>
+</url>
+<url>
+  <loc>http://es-designer.be/logo/?q=notre-equipe</loc>
+</url>
+<url>
+  <loc>http://es-designer.be/logo/?q=clinique</loc>
+</url>
+<url>
+  <loc>http://es-designer.be/logo/?q=enseignement</loc>
+</url>
+<url>
+  <loc>http://es-designer.be/logo/?q=recherches</loc>
+</url>
+<url>
+  <loc>http://es-designer.be/logo/?q=publications</loc>
+</url>
+<url>
+  <loc>http://es-designer.be/logo/?q=stage</loc>
+</url>
+<url>
+  <loc>http://es-designer.be/logo/?q=agenda</loc>
+</url>
+<url>
+  <loc>http://es-designer.be/logo/?q=contact</loc>
+</url>
+</urlset>
